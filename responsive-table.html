@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset='UTF-8'>
+<title>Responsive Table</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style type="text/css">
+.wdlp_mobileTable table {
+	width: 100%;
+	border-collapse: collapse;
+}
+.wdlp_mobileTable tr:nth-of-type(odd) {
+	background: #eee;
+}
+.wdlp_mobileTable th {
+	background: #333;
+	color: white;
+	font-weight: bold;
+}
+.wdlp_mobileTable td, .wdlp_mobileTable th {
+	padding: 6px;
+	border: 1px solid #ccc;
+	text-align: left;
+}
+
+@media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
+/* Force table to not be like tables anymore */
+.wdlp_mobileTable, .wdlp_mobileTable thead, .wdlp_mobileTable tbody, .wdlp_mobileTable th, .wdlp_mobileTable td, .wdlp_mobileTable tr {
+	display: block;
+}
+/* Hide table headers (but not display: none;, for accessibility) */
+.wdlp_mobileTable thead tr {
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+}
+.wdlp_mobileTable tr {
+	border: 1px solid #ccc;
+}
+.wdlp_mobileTable td {
+	/* Behave  like a "row" */
+	border: none;
+	border-bottom: 1px solid #eee;
+	position: relative;
+	padding-left: 50%;
+}
+.wdlp_mobileTable td:before {
+	/* Now like a table header */
+	position: absolute;
+	/* Top/left values mimic padding */
+	top: 6px;
+	left: 6px;
+	width: 45%;
+	padding-right: 10px;
+	white-space: nowrap;
+}
+/*
+		Label the data
+		*/
+.wdlp_mobileTable td:nth-of-type(1):before {
+	content: "Design & Development";
+}
+.wdlp_mobileTable td:nth-of-type(2):before {
+	content: "Business Presence";
+}
+wdlp_mobileTable. td:nth-of-type(3):before {
+	content: "Brochure Website";
+}
+.wdlp_mobileTable td:nth-of-type(4):before {
+	content: "Content Managed";
+}
+.wdlp_mobileTable td:nth-of-type(5):before {
+	content: "E-Commerce";
+}
+}
+</style>
+
+</head>
+
+<body>
+<table class="wdlp_mobileTable">
+  <thead>
+    <tr>
+      <th width="40%">Design & Development</th>
+      <th width="16%">Business Presence</th>
+      <th width="15%">Brochure Website</th>
+      <th width="13%">Content Managed</th>
+      <th width="16%">E-Commerce</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Price</td>
+      <td>$399 + $99/page</td>
+      <td>$599 + $99/page</td>
+      <td>$799 + $99/page</td>
+      <td>$999 + $99/page</td>
+    </tr>
+    <tr>
+      <td>Domain Registration (1 Year)</td>
+      <td>&#10004;</td>
+      <td>&#10004;</td>
+      <td>&#10004;</td>
+      <td>&#10004;</td>
+    </tr>
+    <tr>
+      <td>Hosting (1 Year)</td>
+      <td>&#10004;</td>
+      <td>&#10004;</td>
+      <td>&#10004;</td>
+      <td>&#10004;</td>
+    </tr>
+    <tr>
+      <td>Logo Design</td>
+      <td>&#10004;</td>
+      <td>&#10004;</td>
+      <td>&#10004;</td>
+      <td>&#10004;</td>
+    </tr>
+    <tr>
+      <td>Pages Quantity</td>
+      <td>Upto 5</td>
+      <td>Upto 15</td>
+      <td>Upto 35</td>
+      <td>Unlimited</td>
+    </tr>
+    <tr>
+      <td>Data Capture</td>
+      <td>&#10008;</td>
+      <td>&#10008;</td>
+      <td>&#10004;</td>
+      <td>&#10004;</td>
+    </tr>
+    <tr>
+      <td>Live Chat</td>
+      <td>&#10008;</td>
+      <td>&#10008;</td>
+      <td>&#10004;</td>
+      <td>&#10004;</td>
+    </tr>
+    <tr>
+      <td>Shopping Cart</td>
+      <td>&#10008;</td>
+      <td>&#10008;</td>
+      <td>&#10008;</td>
+      <td>&#10004;</td>
+    </tr>
+    <tr>
+      <td>User Signup/Login</td>
+      <td>&#10008;</td>
+      <td>&#10008;</td>
+      <td>&#10004;</td>
+      <td>&#10004;</td>
+    </tr>
+    <tr>
+      <td>Admin Panel</td>
+      <td>&#10008;</td>
+      <td>&#10008;</td>
+      <td>&#10004;</td>
+      <td>&#10004;</td>
+    </tr>
+    <tr>
+      <td>Email Accounts</td>
+      <td>10 Accounts</td>
+      <td>20 Accounts</td>
+      <td>30 Accounts</td>
+      <td>Unlimited</td>
+    </tr>
+    <tr>
+      <td>Contact Form</td>
+      <td>&#10004;</td>
+      <td>&#10004;</td>
+      <td>&#10004;</td>
+      <td>&#10004;</td>
+    </tr>
+    <tr>
+      <td>Blog</td>
+      <td>&#10008;</td>
+      <td>&#10004;</td>
+      <td>&#10004;</td>
+      <td>&#10004;</td>
+    </tr>
+    <tr>
+      <td>Social Media Packages</td>
+      <td>&#10004;</td>
+      <td>&#10004;</td>
+      <td>&#10004;</td>
+      <td>&#10004;</td>
+    </tr>
+    <tr>
+      <td>Webmaster Tool</td>
+      <td>&#10004;</td>
+      <td>&#10004;</td>
+      <td>&#10004;</td>
+      <td>&#10004;</td>
+    </tr>
+    <tr>
+      <td>Google Analytics Information</td>
+      <td>&#10004;</td>
+      <td>&#10004;</td>
+      <td>&#10004;</td>
+      <td>&#10004;</td>
+    </tr>
+    <tr>
+      <td>Site Map Submission</td>
+      <td>&#10004;</td>
+      <td>&#10004;</td>
+      <td>&#10004;</td>
+      <td>&#10004;</td>
+    </tr>
+    <tr>
+      <td>SEO Friendly</td>
+      <td>&#10004;</td>
+      <td>&#10004;</td>
+      <td>&#10004;</td>
+      <td>&#10004;</td>
+    </tr>
+    <tr>
+      <td>Email Support</td>
+      <td>&#10004;</td>
+      <td>&#10004;</td>
+      <td>&#10004;</td>
+      <td>&#10004;</td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
